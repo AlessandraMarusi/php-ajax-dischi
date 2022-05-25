@@ -10,7 +10,12 @@ include __DIR__. '/database.php'
         <div class="row">
             <?php foreach($dischi as $disco){ ?>
             <div class="col">
-                <span><?php echo $disco['title'] ?></span>
+                <div class="myCard">
+                    <img src="<?php echo $disco['poster']?>" alt="">
+                    <h2><?php echo $disco['title']?></h2>
+                    <span><?php echo $disco['author']?></span>
+                    <span><?php echo $disco['year']?></span>
+                </div>
             </div>
             <?php }?>
         </div>
