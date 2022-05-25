@@ -14,12 +14,12 @@
     <main>
         <div class="container myContainer" id="app">
             <div class="row">
-                <div class="col g-3 gx-4">
+                <div class="col g-3 gx-4" v-for="(disco, index) in dischi" :key="index">
                     <div class="myCard p-3">
-                        <img src="" alt="">
-                        <h4></h4>
-                        <span></span>
-                        <span></span>
+                        <img :src="disco.poster" alt="">
+                        <h4>{{disco.title}}</h4>
+                        <span>{{disco.author}}</span>
+                        <span>{{disco.year}}</span>
                     </div>
                 </div>
             </div>
