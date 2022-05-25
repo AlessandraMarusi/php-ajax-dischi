@@ -9,6 +9,8 @@
     <title>Dischi</title>
 </head>
 <body>
-    <nav>
-        <img class="logo" src="./img/logo.png" alt="">
-    </nav>
+    <header>
+        <nav>
+            <img class="logo" src="./img/logo.png" alt="">
+        </nav>
+    </header>
